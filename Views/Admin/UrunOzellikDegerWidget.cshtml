@@ -1,0 +1,13 @@
+﻿
+@model IEnumerable<ETicaret2020.WebUI.OzellikDeger>
+<div class="form-group">
+    <label class="col-lg-12 control-label">Özellik Değer</label>
+    <div class="col-lg-10">
+        <select class="form-control m-bot15" id="deger" name="OzellikDegerID">
+            @foreach (var deger in Model)
+            {
+                <option value="@deger.Id">@deger.Adi</option>
+            }
+        </select>
+    </div>
+</div>
